@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import './normalize.css';
+import { FONT_WEIGHT } from './fonts';
+import { COLORS } from './colors';
 export const GlobalStyles = createGlobalStyle`
     *,
     *::after,
@@ -22,6 +24,11 @@ export const GlobalStyles = createGlobalStyle`
     a {
         text-decoration: none;
         color: inherit;
+    }
+
+    body{
+        font-weight: ${FONT_WEIGHT.regular};
+        background-color: ${COLORS.white};
     }
 
 `;
